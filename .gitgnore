@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# Logs / scratch
+*.log
+train.log
+train.err
+
+# Local model scratch (keep the trained smellnet.pt!)
+models/probe.pt
+models/smoke.pt
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
