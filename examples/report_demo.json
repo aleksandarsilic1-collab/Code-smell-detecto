@@ -1,0 +1,159 @@
+{
+  "files_scanned": 1,
+  "files_with_smells": 1,
+  "total_smells": 3,
+  "summary": {
+    "unclear_naming": 1,
+    "magic_numbers": 1,
+    "many_parameters": 1
+  },
+  "files": [
+    {
+      "file": "examples\\smelly_demo.py",
+      "findings": [
+        {
+          "file": "examples\\smelly_demo.py",
+          "name": "process_data2",
+          "lineno": 5,
+          "end": 14,
+          "smells": [
+            {
+              "label": "unclear_naming",
+              "prob": 0.999
+            }
+          ],
+          "scores": {
+            "long_function": 0.0,
+            "many_parameters": 0.0,
+            "deep_nesting": 0.0,
+            "magic_numbers": 0.037,
+            "unclear_naming": 0.999,
+            "complex_responsibilities": 0.0,
+            "duplication": 0.005
+          },
+          "evidence": {
+            "n_lines": 10.0,
+            "n_stmts": 11.0,
+            "n_branches": 2.0,
+            "max_nesting": 1.0,
+            "n_params": 2.0,
+            "n_magic": 4.0,
+            "n_calls": 2.0,
+            "bad_param_frac": 1.0,
+            "name_bad": 0.0,
+            "name_snake": 1.0
+          },
+          "magic_numbers": [
+            100,
+            3,
+            50,
+            5
+          ]
+        },
+        {
+          "file": "examples\\smelly_demo.py",
+          "name": "do_stuff",
+          "lineno": 17,
+          "end": 37,
+          "smells": [
+            {
+              "label": "magic_numbers",
+              "prob": 0.542
+            }
+          ],
+          "scores": {
+            "long_function": 0.0,
+            "many_parameters": 0.0,
+            "deep_nesting": 0.0,
+            "magic_numbers": 0.542,
+            "unclear_naming": 0.001,
+            "complex_responsibilities": 0.0,
+            "duplication": 0.177
+          },
+          "evidence": {
+            "n_lines": 21.0,
+            "n_stmts": 17.0,
+            "n_branches": 6.0,
+            "max_nesting": 2.0,
+            "n_params": 1.0,
+            "n_magic": 4.0,
+            "n_calls": 10.0,
+            "bad_param_frac": 0.0,
+            "name_bad": 0.0,
+            "name_snake": 1.0
+          },
+          "magic_numbers": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "file": "examples\\smelly_demo.py",
+          "name": "save_and_load_and_mail_and_log_and_notify",
+          "lineno": 40,
+          "end": 45,
+          "smells": [
+            {
+              "label": "many_parameters",
+              "prob": 0.988
+            }
+          ],
+          "scores": {
+            "long_function": 0.0,
+            "many_parameters": 0.988,
+            "deep_nesting": 0.0,
+            "magic_numbers": 0.0,
+            "unclear_naming": 0.0,
+            "complex_responsibilities": 0.0,
+            "duplication": 0.011
+          },
+          "evidence": {
+            "n_lines": 6.0,
+            "n_stmts": 12.0,
+            "n_branches": 1.0,
+            "max_nesting": 1.0,
+            "n_params": 8.0,
+            "n_magic": 0.0,
+            "n_calls": 1.0,
+            "bad_param_frac": 0.0,
+            "name_bad": 0.0,
+            "name_snake": 1.0
+          },
+          "magic_numbers": []
+        },
+        {
+          "file": "examples\\smelly_demo.py",
+          "name": "normalize_metric",
+          "lineno": 48,
+          "end": 51,
+          "smells": [],
+          "scores": {
+            "long_function": 0.0,
+            "many_parameters": 0.0,
+            "deep_nesting": 0.0,
+            "magic_numbers": 0.001,
+            "unclear_naming": 0.0,
+            "complex_responsibilities": 0.0,
+            "duplication": 0.062
+          },
+          "evidence": {
+            "n_lines": 4.0,
+            "n_stmts": 2.0,
+            "n_branches": 0.0,
+            "max_nesting": 0.0,
+            "n_params": 1.0,
+            "n_magic": 0.0,
+            "n_calls": 3.0,
+            "bad_param_frac": 0.0,
+            "name_bad": 0.0,
+            "name_snake": 1.0
+          },
+          "magic_numbers": []
+        }
+      ],
+      "duplicates": []
+    }
+  ]
+}
