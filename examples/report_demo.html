@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SmellNet report</title>
+    <style>
+        body {
+            font-family: ui-monospace, Menlo, Consolas, monospace;
+            margin: 24px;
+            color: #1d2433;
+        }
+
+        h1 {
+            border-bottom: 3px solid #1d2433;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            margin-top: 28px;
+            background: #eef1f6;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        th {
+            text-align: left;
+            border-bottom: 2px solid #bbb;
+            padding: 6px 10px;
+        }
+
+        td {
+            border-bottom: 1px solid #e0e4ec;
+            padding: 8px 10px;
+            vertical-align: top;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 1px 2px 1px 0;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 12px;
+        }
+
+        .stats {
+            color: #445;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>&#128026; SmellNet &#8212; neural code sniff report</h1>
+    <p class="stats">files scanned: 1 &middot;
+        files with smells: 1 &middot;
+        total smells: 3</p>
+    <ul>
+        <li><span class='badge' style='background:#e67e22'>magic_numbers</span> x 1</li>
+        <li><span class='badge' style='background:#e67e22'>many_parameters</span> x 1</li>
+        <li><span class='badge' style='background:#8e44ad'>unclear_naming</span> x 1</li>
+    </ul>
+    <h3>examples\smelly_demo.py</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>function</th>
+                <th>line</th>
+                <th>smells</th>
+                <th>evidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>process_data2</td>
+                <td>5</td>
+                <td><span class='badge' style='background:#8e44ad'>unclear_naming <b>1.00</b></span></td>
+                <td>10 lines, 2 params, nesting 1, 4 magic numbers, 11 statements, 100% weak param names</td>
+            </tr>
+            <tr>
+                <td>do_stuff</td>
+                <td>17</td>
+                <td><span class='badge' style='background:#e67e22'>magic_numbers <b>0.54</b></span></td>
+                <td>21 lines, 1 params, nesting 2, 4 magic numbers, 17 statements</td>
+            </tr>
+            <tr>
+                <td>save_and_load_and_mail_and_log_and_notify</td>
+                <td>40</td>
+                <td><span class='badge' style='background:#e67e22'>many_parameters <b>0.99</b></span></td>
+                <td>6 lines, 8 params, nesting 1, 12 statements</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
